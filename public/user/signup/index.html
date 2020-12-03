@@ -94,15 +94,7 @@
 
             </a>
         </div>
-
         <div class="card card-body">
-
-
-            <div class="alert alert-soft-success d-flex" role="alert">
-                <i class="material-icons mr-3">check_circle</i>
-                <div class="text-body">An email with password reset instructions has been sent to your email address, if it exists on our system.</div>
-            </div>
-
             <a href="" class="btn btn-light btn-block">
                 <span class="mr-2">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="abcRioButtonSvg">
@@ -124,6 +116,17 @@
 
             <form action="index.html" novalidate>
                 <div class="form-group">
+                    <label class="text-label" for="name_2">Name:</label>
+                    <div class="input-group input-group-merge">
+                        <input id="name_2" type="text" required="" class="form-control form-control-prepended" placeholder="John Doe">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <span class="far fa-user"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label class="text-label" for="email_2">Email Address:</label>
                     <div class="input-group input-group-merge">
                         <input id="email_2" type="email" required="" class="form-control form-control-prepended" placeholder="john@doe.com">
@@ -140,23 +143,22 @@
                         <input id="password_2" type="password" required="" class="form-control form-control-prepended" placeholder="Enter your password">
                         <div class="input-group-prepend">
                             <div class="input-group-text">
-                                <span class="fa fa-key"></span>
+                                <span class="material-icons">lock</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="form-group mb-1">
-                    <button class="btn btn-block btn-primary" type="submit">Login</button>
-                </div>
-                <div class="form-group text-center">
+                <div class="form-group mb-2 text-center">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" checked="" id="remember">
-                        <label class="custom-control-label" for="remember">Remember me for 30 days</label>
+                        <input type="checkbox" checked="" class="custom-control-input" id="terms" />
+                        <label class="custom-control-label" for="terms">I accept <a href="#">Terms and Conditions</a></label>
                     </div>
                 </div>
-                <div class="form-group text-center mb-0">
-                    <a href="">Forgot password?</a> <br>
-                    Don't have an account? <a class="text-underline" href="signup.html">Sign up</a>
+                <div class="form-group text-center">
+                    <button class="btn btn-success btn-lg btn-block mb-3" type="submit">Create Account</button>
+                </div>
+                <div class="text-center">
+                    <span>Have an account?</span> <a class="text-body text-underline" href="login.html"> Login</a>
                 </div>
             </form>
         </div>
