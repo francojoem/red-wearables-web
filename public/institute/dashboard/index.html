@@ -80,9 +80,69 @@
 
 
 
-
-
-
+    <!-- Modals -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">User Name</h5><br>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <br>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h6 style="font-weight: bold;">Blood Group</h6>
+                    </div>
+                    <div class="col-sm-10">
+                        B+ve
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2">
+                        <h6 style="font-weight: bold;">Emergency contacts</h6>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6>Contact 1</h6><br>
+                                123456789
+                            </div>
+                            <div class="col-sm-3">
+                                <h6>Contact 2</h6><br>
+                                1234567890
+                            </div>
+                            <div class="col-sm-3">
+                                <h6>Contact 3</h6><br>
+                                987654321
+                            </div>
+                            <div class="col-sm-3">
+                                <h6>Contact 4</h6><br>
+                                987654321
+                            </div>  
+                        </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-sm-2">
+                        <h6 style="font-weight: bold;">Medical History</h6>
+                    </div>
+                    <div class="col-sm-10">
+                        <a class="btn btn-primary">View</a>
+                    </div>
+                   </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modals End -->
 
 
 
@@ -829,10 +889,10 @@
                             </thead>
                             <tbody>
                               <tr>
-                                <th scope="row">1</th>
-                                <td>-</td>
-                                <td>-</td>
-                                <td><button id="myBtn">Open</button></td>
+                                    <th scope="row">1</th>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">More Info</button></td>
                               </tr>
                               <tr>
                                 <th scope="row">2</th>
@@ -848,9 +908,8 @@
                               </tr>
                             </tbody>
                           </table>
-                          <div id="myModal" class="modal">
+                          <!-- <div id="myModal" class="modal">
 
-                            <!-- Modal content -->
                             <div class="modal-content">
                               <span class="close">&times;</span>
                               <p>Name</p>
@@ -884,7 +943,7 @@
                                 modal.style.display = "none";
                               }
                             }
-                            </script>
+                            </script> -->
                         
                         <!-- END ACTIVITY -->
                     </div>
